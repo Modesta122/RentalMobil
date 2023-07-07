@@ -4,11 +4,11 @@
 
 | NIM             | Nama                         |
 | --------------- | ---------------------------- |
-| **31210205**    | Muhammad Rifki               |
-| **31210388**    | Muhammad Alwi Nur Fathihah   |
-| **31210180**    | Ade Maulani Bilgis           |
-| **31210182**    | Silvia Delya Heryani         |
-| **31210142**    | Modesta Liunesi              |
+| **312110205**   | Muhammad Rifki               |
+| **312110388**   | Muhammad Alwi Nur Fathihah   |
+| **312110180**   | Ade Maulani Bilgis           |
+| **312110182**   | Silvia Delya Heryani         |
+| **312110142**   | Modesta Liunesi              |
 
 ## Rancangan Basis Data
 
