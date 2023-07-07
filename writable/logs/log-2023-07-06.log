@@ -1,0 +1,651 @@
+ERROR - 2023-07-06 06:09:38 --> mysqli_sql_exception: Unknown column 'Kendaraan.KendaraanID' in 'where clause' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(42): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->edit('1')
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-06 06:09:38 --> Unknown column 'Kendaraan.KendaraanID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = :Kendaraan.KendaraanID:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\KendaraanController.php(42): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 06:37:47 --> mysqli_sql_exception: Unknown column 'Kendaraan.KendaraanID' in 'where clause' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(42): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->edit('1')
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-06 06:37:47 --> Unknown column 'Kendaraan.KendaraanID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Kendaraan`
+WHERE `Kendaraan`.`KendaraanID` = :Kendaraan.KendaraanID:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\KendaraanController.php(42): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 06:42:54 --> Undefined index: id_Kendaraan
+in APPPATH\Views\kendaraan\edit.php on line 9.
+ 1 APPPATH\Views\kendaraan\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_Kendaraan', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\kendaraan\\edit.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\kendaraan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kendaraan/edit', [], true)
+ 5 APPPATH\Controllers\KendaraanController.php(44): view('kendaraan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 06:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-06 06:47:20 --> mysqli_sql_exception: Unknown column 'HargaSewa' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 06:47:20 --> Unknown column 'HargaSewa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (\'2010\', \'500000\', \'Dipesan\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (\'2010\', \'500000\', \'Dipesan\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (\'2010\', \'500000\', \'Dipesan\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (:Tahun:, :HargaSewa:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 06:49:20 --> mysqli_sql_exception: Unknown column 'HargaSewa' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 06:49:20 --> Unknown column 'HargaSewa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (\'2010\', \'500000\', \'Dipesan\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (\'2010\', \'500000\', \'Dipesan\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (\'2010\', \'500000\', \'Dipesan\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Kendaraan` (`Tahun`, `HargaSewa`, `Status`) VALUES (:Tahun:, :HargaSewa:, :Status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 06:51:35 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 06:52:01 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 06:52:24 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 06:54:01 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 06:55:14 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 06:55:14 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kendaraan` (`model`, `tahun`, `harga`, `status`) VALUES (NULL, \'2010\', \'500000\', \'Tersedia\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kendaraan` (`model`, `tahun`, `harga`, `status`) VALUES (NULL, \'2010\', \'500000\', \'Tersedia\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kendaraan` (`model`, `tahun`, `harga`, `status`) VALUES (NULL, \'2010\', \'500000\', \'Tersedia\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kendaraan` (`model`, `tahun`, `harga`, `status`) VALUES (:model:, :tahun:, :harga:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 06:55:33 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 06:55:33 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kendaraan` (`merk`, `model`, `tahun`, `harga`, `status`) VALUES (\'avanza\', NULL, \'2010\', \'500000\', \'Tersedia\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kendaraan` (`merk`, `model`, `tahun`, `harga`, `status`) VALUES (\'avanza\', NULL, \'2010\', \'500000\', \'Tersedia\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kendaraan` (`merk`, `model`, `tahun`, `harga`, `status`) VALUES (\'avanza\', NULL, \'2010\', \'500000\', \'Tersedia\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kendaraan` (`merk`, `model`, `tahun`, `harga`, `status`) VALUES (:merk:, :model:, :tahun:, :harga:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\KendaraanController.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 06:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-06 07:05:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\kendaraan\edit.php on line 9.
+ 1 APPPATH\Views\kendaraan\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\kendaraan\\edit.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\kendaraan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kendaraan/edit', [], true)
+ 5 APPPATH\Controllers\KendaraanController.php(44): view('kendaraan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 07:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-06 07:20:22 --> mysqli_sql_exception: Unknown column 'NomorTelepon' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Cu...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cu...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cu...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cu...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\CustomerController.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\CustomerController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 07:20:22 --> Unknown column 'NomorTelepon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'sil\', \'12345\', \'jkt\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'sil\', \'12345\', \'jkt\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'sil\', \'12345\', \'jkt\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (:Nama:, :NomorTelepon:, :Alamat:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CustomerController.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 07:21:49 --> mysqli_sql_exception: Unknown column 'NomorTelepon' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Cu...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cu...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cu...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cu...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\CustomerController.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\CustomerController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 07:21:49 --> Unknown column 'NomorTelepon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'sil\', \'12345\', \'jkt\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'sil\', \'12345\', \'jkt\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'sil\', \'12345\', \'jkt\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Customer` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (:Nama:, :NomorTelepon:, :Alamat:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CustomerController.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 07:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 07:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-06 07:33:12 --> mysqli_sql_exception: Unknown column 'tanggal_transaksi' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\TransaksiController.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\TransaksiController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 07:33:12 --> Unknown column 'tanggal_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `transaksi` (`tanggal_transaksi`, `total_harga`) VALUES (\'22\', \'800000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal_transaksi`, `total_harga`) VALUES (\'22\', \'800000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal_transaksi`, `total_harga`) VALUES (\'22\', \'800000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal_transaksi`, `total_harga`) VALUES (:tanggal_transaksi:, :total_harga:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\TransaksiController.php(33): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 07:47:12 --> Undefined variable: transaksi
+in APPPATH\Views\transaksi\tambah.php on line 11.
+ 1 APPPATH\Views\transaksi\tambah.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(19): view('transaksi/tambah')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 07:47:17 --> Undefined variable: transaksi
+in APPPATH\Views\transaksi\tambah.php on line 11.
+ 1 APPPATH\Views\transaksi\tambah.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(19): view('transaksi/tambah')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 07:54:32 --> Undefined variable: transaksi
+in APPPATH\Views\transaksi\tambah.php on line 11.
+ 1 APPPATH\Views\transaksi\tambah.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(19): view('transaksi/tambah')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 07:56:38 --> Undefined variable: transaksi
+in APPPATH\Views\transaksi\tambah.php on line 11.
+ 1 APPPATH\Views\transaksi\tambah.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(19): view('transaksi/tambah')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 07:56:41 --> Undefined variable: transaksi
+in APPPATH\Views\transaksi\tambah.php on line 11.
+ 1 APPPATH\Views\transaksi\tambah.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(19): view('transaksi/tambah')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 07:56:41 --> Undefined variable: transaksi
+in APPPATH\Views\transaksi\tambah.php on line 11.
+ 1 APPPATH\Views\transaksi\tambah.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\UAS1\\ci4\\app\\Views\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\TransaksiController.php(19): view('transaksi/tambah')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TransaksiController->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TransaksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 12:57:07 --> mysqli_sql_exception: Unknown column 'NomorTelepon' in 'field list' in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `So...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `So...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `So...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `So...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\UAS1\ci4\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\UAS1\ci4\app\Controllers\SopirController.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\SopirController->simpan()
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SopirController))
+#10 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-07-06 12:57:07 --> Unknown column 'NomorTelepon' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Sopir` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'rifki\', \'098765\', \'dpk\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Sopir` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'rifki\', \'098765\', \'dpk\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Sopir` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (\'rifki\', \'098765\', \'dpk\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Sopir` (`Nama`, `NomorTelepon`, `Alamat`) VALUES (:Nama:, :NomorTelepon:, :Alamat:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\SopirController.php(33): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SopirController->simpan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SopirController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+CRITICAL - 2023-07-06 12:58:44 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 762.
+ 1 SYSTEMPATH\BaseModel.php(762): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\SopirController.php(33): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\SopirController->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SopirController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 13:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 13:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-06 14:38:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`)) in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-06 14:38:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN :id_kendaraan:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 14:40:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`)) in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-06 14:40:03 --> Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN :id_kendaraan:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+ERROR - 2023-07-06 14:41:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`)) in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-06 14:41:59 --> Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN :id_kendaraan:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 14:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-06 14:42:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`)) in C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UAS1\ci4\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ke...', 0)
+#1 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 C:\xampp\htdocs\UAS1\ci4\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 C:\xampp\htdocs\UAS1\ci4\system\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\UAS1\ci4\system\BaseModel.php(1065): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\UAS1\ci4\app\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+#8 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+#9 C:\xampp\htdocs\UAS1\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\UAS1\ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\UAS1\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-06 14:42:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`rental_mobil`.`transaksi`, CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`id_kendaraan`) REFERENCES `kendaraan` (`id_kendaraan`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kendaraan`
+WHERE `id_kendaraan` IN :id_kendaraan:', [...], false)
+ 5 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\KendaraanController.php(67): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\KendaraanController->hapus('4')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KendaraanController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
+INFO - 2023-07-06 14:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 14:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-06 15:26:53 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\LaporanTransaksiController.php(63): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LaporanTransaksiController->hapus('0')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanTransaksiController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\UAS1\\ci4\\public\\index.php')
