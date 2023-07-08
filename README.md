@@ -16,23 +16,23 @@
   
   ![img](ss/01.png)
 
-* Tabel yang pertama adalah tabel customer, di dalam tabel customer terdapat beberapa atribut yaitu: id_customer, nama, telepon, dan alamat. Tabel ini untuk menyimpan data customer rental mobil.
+* Tabel yang pertama adalah **tabel customer**, di dalam tabel customer terdapat beberapa atribut yaitu: **id_customer, nama, telepon, dan alamat**. Tabel ini untuk menyimpan data customer rental mobil.
   
   ![img](ss/02.png)
   
-* Tabel selanjutnya adalah tabel kendaraan, pada tabel ini semua data kendaraan akan disimpan. Atributnya terdiri dari: id_kendaraan, merk, model, tahun, harga, dan tersedia.
+* Tabel selanjutnya adalah **tabel kendaraan**, pada tabel ini semua data kendaraan akan disimpan. Atributnya terdiri dari: **id_kendaraan, merk, model, tahun, harga, dan tersedia**.
 
   ![img](ss/03.png)
   
-* Pada tabel laporan_transaksi terdapat beberapa atribut yaitu: id, tanggal_laporan, id_transaksi, keterangan. Tabel ini untuk menyimpan data laporan transaksi yang sudah atau yang belum diproses.
+* Pada **tabel laporan transaksi** terdapat beberapa atribut yaitu: **id, tanggal_laporan, id_transaksi, keterangan**. Tabel ini untuk menyimpan data laporan transaksi yang sudah atau yang belum diproses.
 
   ![img](ss/04.png)
   
-* Tabel selanjutnya adalah tabel sopir, tabel ini berisi data sopir beserta identitas dan harga jasanya. Atribut tabel ini terdiri dari:
+* Tabel selanjutnya adalah **tabel sopir**, tabel ini berisi data sopir beserta identitas dan harga jasanya. Atribut tabel ini terdiri dari seperti di bawah ini:
 
   ![img](ss/05.png)
   
-* Tabel terakhir adalah tabel transaksi, atribut tabel ini teridiri dari: id_transaksi, id_customer, id_kendaraan, id_sopir, tanggal_sewa, tanggal_kembali, dan total_harga.
+* Tabel terakhir adalah **tabel transaksi**, atribut tabel ini teridiri dari: **id_transaksi, id_customer, id_kendaraan, id_sopir, tanggal_sewa, tanggal_kembali, dan total_harga**.
 
   ![img](ss/06.png)
 
@@ -57,7 +57,7 @@
   
 ## Tampilan Aplikasi
 
-Pada tampilan aplikasi ini, terdapat menu beranda, data cutomer, data sopir, data kendaraan, data transaksi, dan laporan transaksi.
+Pada tampilan aplikasi ini, terdapat menu beranda, data customer, data sopir, data kendaraan, data transaksi, dan laporan transaksi.
 
 ### 1. Menu Beranda
 
@@ -113,10 +113,11 @@ Untuk mengakses menu beranda ketikkan http://localhost:8080/index.php/ pada brow
 
 ## Link Youtube
 
-Berikut link youtube kelompok kami : [Kelompok 1 - Rental Mobil](https://youtu.be/CAuVwWZUfZo)
+Berikut link youtube kelompok kami : https://youtu.be/CAuVwWZUfZo
 
-## Link Web Hosting
+## Link Web Hosting (Demo Program)
 
-Berikut link web hosting kelompok kami : [Kelompok 1 - Rental Mobil]()
+Berikut link web hosting kelompok kami : http://rentalmobil.my.to/
+
 
 ## Terima Kasih!
